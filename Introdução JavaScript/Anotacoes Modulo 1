@@ -1,0 +1,112 @@
+----------------------------------------------------------------
+----------------------------------------------------------------
+          \\\\Aula 03, Variáveis e dados:////
+----------------------------------------------------------------
+-No javascript a varaiavel pode armazenar um valor diferente indefere do time do scrip entao ele sempre inicia com 'var'
+ex:
+var nome = 'Diego'; 
+ps. //pode ser tanto aspas simples ou dupla;
+
+-O javascrip nao possui tipagem estática, possui tipagem dinâmica ou seja consegue atribuir diferentes valores na msm variavel;
+
+-As variaveis sao:
+inteiro;
+float;
+bulano (True or false);
+vetores[bla, bla, bla];;
+objetos variaveis que guardam mais de um valor que todos valores referente ao obj ou item() //o.o.
+
+var aluno = {
+	nome: 'diego';
+	idade: 23;
+}
+ou seja ele vc adiciona mais atributo para a msm variável.
+
+sempre que for objeto para acessa usaremos o .(Ponto)
+ex no array 
+console.log(alunos[1]);
+no caso do obj
+console.log(aluno.oq eu quero)
+----------------------------------------------------------------           \\\\Aula 04, Operações matemáticas:////
+----------------------------------------------------------------
+se eu colocar a seguinte variavel 
+var x=10,y=5;
+
+//(Nota-se que nao preciso escrever var novamente, pois usei virgula e usei o msm var da linha 32);
+
+e se eu dar um console.log(x,y);
+vai mostrar o resultado das variáveis armazenadas;
+
+agora se eu usar o seguite comando: 
+var x="10",y=5;
+
+e dar o comando:
+console.log(x,y);
+nota-se que ele vai cocatenar, ou seja retornará 105.
+----------------------------------------------------------------
+          \\\\Aula 05, Funções////
+----------------------------------------------------------------
+Para declarar uma função precisamos declarar a palavra "function" defida com o nome da função junto com os parametros que vao receber ex:
+
+function soma(numero1, numero2){
+	
+}
+quando usamos o var dentro de uma funcao ele so fica visivel dentro do escopo, ou seja preciso chamala com o uso do var fora da funcao para funciona-l
+----------------------------------------------------------------
+          \\\\Aula 06, Condicionais////
+----------------------------------------------------------------
+Nesta aula será aprensentado o uso do if/else e do switch
+nao tem oq falar, é igual ao C;
+----------------------------------------------------------------
+          \\\\Aula 07, Operadores Lógicos////
+---------------------------------------------------------------
+Nessa aula vamos abordar o uso dos operadores lógicos
+AND, OR e NOT
+nada mais a declarar, é os mesmos operadores lógicos que em C
+AND = &&;
+OR = ||;
+NOT = !==;
+----------------------------------------------------------------
+         \\\\Aula 08, Condição ternária////
+----------------------------------------------------------------
+O conceito de condicao ternaria se aplica quando temos um if logo em sequencia temos um else, ou seja quando temos so duas verificacao dentro do if, se ele esta validando ou nao esta. Podemos reduzir a verbosidade(codigo) por exemplo:
+
+var sexo = 'M';
+
+if (sexo === 'M'){
+	return 'Masculino';
+}
+else {
+	return 'Feminino';
+}
+
+podemos reduzir esse codigo para a seguinte forma:
+
+return (sexo === 'M') ? 'Masculino':'Feminino'
+
+coloco em dois pontos oq nao é satisfatório, ou seja oq nao queremos 
+
+----------------------------------------------------------------
+         \\\\Aula 09, Estrutura de repetição////
+----------------------------------------------------------------
+Nesta aula vamos aprender a usar as estruturas de repetição um for e um while 
+
+Quando devo usar for ou while?
+r: For quando vc souber o tamanho do intervalo, usa o while quando nao sabemos quantas vezes o fluxo seŕa executado.
+basicamente como em C.
+----------------------------------------------------------------
+         \\\\Aula 10, Intervalo e timeout////
+----------------------------------------------------------------
+O intervalo no javascript é alguma função que ele executa várias vezes dentro de um intervalo.
+ex:
+
+function exibeAlgo(){
+	console.log('Hello World');
+}
+
+setInterval(exibeAlgo, 1000);
+ou seja a cada 1seg ele exibe algo a cada 1 segundo
+
+setTimeout(exibeAlgo, 1000);
+ou seja o tempo de espera para executar o comado que no caso é 1 segundo.
+--------------------------------------------------------------------------------------------------------------------------------
