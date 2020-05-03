@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Exercicio 1</title>
+    </head>
+        <body>
+            <div id="app">
+                <button class="botao">RedButton</button> 
+                <div class="box"></div>
+<!--1º exercício
+Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
+vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
+aparecer na tela.-->
+        <script>
+                var btnElement=document.querySelector('button.botao');
+               
+                    btnElement.onclick = function(){
+               
+                var boxElement=document.querySelector('.box');
+
+                    boxElement.style.width =100;
+                    boxElement.style.height=100;
+                    boxElement.style.backgroundColor='#f00';
+            }
+        </script>
+
+
+     </body>
+</html>
