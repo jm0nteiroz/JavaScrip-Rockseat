@@ -1,0 +1,80 @@
+-----------------------------------------------------------------
+		 \\\\Aula 01, Eventos inline////
+-----------------------------------------------------------------	Como o js faz para conseguir manipular a dom do nosso documento...
+
+O que é DOM? 
+-Dom é a árvore de elemento dentro do nosso HTML
+
+<buton>'bla bla bla</button> //Criar um botao
+<input/>//Criar um caixa de adesão de informação
+
+alert()//É uma função global do JS para mostrar um alerta em tela.
+-----------------------------------------------------------------			 \\\Aula 02, Trabalhando com a DOM////
+-----------------------------------------------------------------
+	Como referenciar os elementos da DOM do HTML, atravez do javascript, basicamente buscar uma info na arvore de elementos atravez do script
+vamos comercar com o input e criação de botao //como no arquivo index2.html
+
+Agora vamos refernciar elementos atraves do js
+criar a variavel e add a refetencia da DOM
+ex:
+var inputElement = docmuent.getElementsByid('nome');
+var inputElement = docmuent.getElementsByTagName('inoput'[0]);
+var inputElement = docmuent.getElementsByClassName('nome'[0]);
+var inputElement = docmuent.querySelector('nome');
+(Para referenciar +1)
+var inputElement = docmuent.querySelectorAll('nome'); 
+
+//document é variavel global q vc referencia a DOM do codigo
+
+//getElementById busque o element com id ('bla bla')
+
+//getElementByTagName buscar pela tag que esta utilizando, e ah! sempre retorna um vetor, se quiser uma tag especifica eu uso o '[]' com o numero dela inciando em 0, se nao passar o '[]' ele retorna todos os input's, pois tag eclasses nao sao unicos como o Id.
+
+//getElementByClassName buscar pela classe que esta utilizando, e ah! sempre retorna um vetor, se quiser uma tag especifica eu uso o '[]' com o numero dela inciando em 0, se nao passar o '[]' ele retorna todos os input's pois classes e tag nao sao unicos como o Id.
+
+//querySelector deixa a gente andar pela DOM, como assim? 
+voce consegue andar dando o endereço ex
+('body div#app input') veja que depois de cada item usamos o espaco ou seja como se fosse uma pasta cd:Joao/Desktop/Pasta
+
+agora vamos usar onclick/ ação vamos usar dentro do script para nao poluir o html, como o exemplo do index2.html
+-----------------------------------------------------------------
+		 \\\\Aula 03, Lidando com elementos////
+-----------------------------------------------------------------
+Podemos criar novos elementos atraves da Js
+ex
+var link element = document.creatElement('a');
+ linkElement.setAttribute('href','https://www.youtube.com');
+
+ onde o set.Attribute(Setar atributo), vc referncia com o href e coloca a estacia que vc referencia, no caso um video no yt.
+ para incluir um texto dentro do link usaremos o comando:
+
+ var textElement = document.creatTextNode('Acessar link');
+ linkElement.appendChild(textElement);
+ Do pt é adicionar o textElement como um filho do linkElement.
+ Agora como vamos colocar referencia a div#app? 
+
+ var containerElement = document.querySelector('div#app');
+ 
+ containerElement.appendChild(LInkElement);
+ jogar o link dentro do corpo
+
+ Agora se quiser colocar outros atributos dentro
+ podemos sempre usar sempre o setAttribute 
+ ex pro title:
+ linkElement.setAttributeTextNode('title','Acessar o remix brabo');
+
+ podemos removomer atraves do JS ex:
+ containerElement.removeChild(inputElement);
+
+ele irá remover 
+-----------------------------------------------------------------
+			 \\\Aula 04, Alterando estilos////
+-----------------------------------------------------------------
+Nessa aula vamos criar estilos da inicializacao css
+onde com o comando 
+.style.wedth largura
+.style.height altura
+.style.backgroundcolor cor dessa box
+----------------------------------------------------------------------------------------------------------------------------------
+
+
