@@ -1,6 +1,7 @@
 -----------------------------------------------------------------
 		 \\\\Aula 01, Eventos inline////
------------------------------------------------------------------	Como o js faz para conseguir manipular a dom do nosso documento...
+-----------------------------------------------------------------	
+Como o js faz para conseguir manipular a dom do nosso documento...
 
 O que é DOM? 
 -Dom é a árvore de elemento dentro do nosso HTML
