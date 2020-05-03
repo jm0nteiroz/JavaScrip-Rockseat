@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Manipulando a Dom2</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type= "text" name="nome" id="nome" />
+            <button class="botao">Adicionar</button> 
+        </div>
+        
+        <script>
+            var inputElement = document.querySelector('input[name]');
+            var btnElement = document.querySelector('button.botao');
+
+            //criando o alert dentro do scrip nao polui o html.
+            //manipulando todos elementos da DOM dentro do scipt
+            btnElement.onclick = function(){
+                //var text =inputElement.value; //para exibir oq foi digitado
+                  var text='Função Indsponível' //para exibir algo prédefinido
+                alert(text);
+
+            }
+            //console.log(inputElement);
+            console.log(btnElement);
+            
+        </script>
+    </body>
+</html>

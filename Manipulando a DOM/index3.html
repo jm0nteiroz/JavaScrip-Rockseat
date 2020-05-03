@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Lidando com elementos</title>
+    </head>
+        <body>
+            <div id="app">
+                <!--input type="text" name="nome" />
+                <button class="botao">Adicionar</button>-->
+            </div>
+               
+               <script>
+                    var linkElement = document.createElement('a');
+
+                    linkElement.setAttribute('href','https://www.youtube.com/watch?v=u7zfOo045RQ');
+                    linkElement.setAttribute('title','remix brabo');
+ 
+
+                    var textElement = document.createTextNode('Acessar o remix');
+                    linkElement.appendChild(textElement);
+
+                    var containerElement= document.querySelector('div#app' );
+                    containerElement.appendChild(linkElement);
+                </script>
+
+        </body>
+</html>
